@@ -1,6 +1,6 @@
 import streamlit as st
 
-st_set_page_config(
+st.set_page_config(
 page_title == 'Genetic Algorithm'
 )
 
