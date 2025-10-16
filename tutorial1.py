@@ -23,7 +23,7 @@ fig = px.pie(program_counts, names='Arts Program', values='Count',
              color_discrete_sequence=px.colors.qualitative.Pastel)
 st.plotly_chart(fig)
 
-print("The most popular arts program among the surveyed students is B.A. in English, representing 77.5% of the 89 students. Additionally, 2 students did not specify their program during this survey.")
+st.write("The most popular arts program among the surveyed students is B.A. in English, representing 77.5% of the 89 students. Additionally, 2 students did not specify their program during this survey.")
 
 # Grouped bar chart: Bachelor Academic Year by Gender
 fig = px.histogram(
@@ -37,7 +37,7 @@ fig = px.histogram(
 )
 st.plotly_chart(fig)
 
-print("Most of the bachelor students participating in this survey are second-year students, with a total of 31 students, and the group is predominantly female.")
+st.write("Most of the bachelor students participating in this survey are second-year students, with a total of 31 students, and the group is predominantly female.")
 
 # Grouped bar chart: Masters Academic Year by Gender
 fig = px.histogram(
@@ -51,7 +51,7 @@ fig = px.histogram(
 )
 st.plotly_chart(fig)
 
-print("Most of the master’s students participating in this survey are first-year students, while there is only one student in the second year.")
+st.write("Most of the master’s students participating in this survey are first-year students, while there is only one student in the second year.")
 
 # Line plot: Students with GPA > 3.7
 semesters = [
